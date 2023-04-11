@@ -31,4 +31,49 @@ h1, h2, h3, h4, h5, h6{
     margin: 0 auto;
 }
 
-/*basic chapter ebd*/
+/*basic chapter end*/
+
+/*--------------------------------------------------------------------------------------*/
+
+/*header start*/
+
+.header{
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;                                 /*покрывает всю ширину экрана, сколько бы не > or < размер*/
+    background-repeat: no-repeat;                           /*без повторений*/
+    min-height: 100vh;                                          /*полная высота картинки*/
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+    padding: 57px 0;
+    gap: 100px;
+    justify-content: flex-end;
+
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px; 
+}
+
+.logo path{
+    transition: fill .3s ease;                                 /*плавная анимация перехода в цвет*/
+}
+
+.logo:hover path{
+    fill: #0093A1;
+}
+
+.header-btn{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 71px 8.46px 71px;
+    background-color: #262C27;
+    border: none;
+    cursor: pointer;
+}
+
+.header-content{
+    min-height: calc(100vh - 161px);
+}
