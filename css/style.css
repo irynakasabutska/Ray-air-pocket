@@ -42,6 +42,13 @@ h1, h2, h3, h4, h5, h6{
     background-size: cover;                                 /*покрывает всю ширину экрана, сколько бы не > or < размер*/
     background-repeat: no-repeat;                           /*без повторений*/
     min-height: 100vh;                                          /*полная высота картинки*/
+    background-position: center;
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
 }
 
 .header-top{
@@ -76,4 +83,34 @@ h1, h2, h3, h4, h5, h6{
 
 .header-content{
     min-height: calc(100vh - 161px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-content-box{
+    max-width: 550px;
+    text-align: center;
+    margin-right: 30px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+}
+
+.header-title{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 71px;
+}
+
+.header-text{
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.header-decor-text{
+    position: absolute;
+    top: 0;
 }
