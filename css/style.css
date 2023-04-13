@@ -21,7 +21,7 @@ a{
     color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 
@@ -139,23 +139,29 @@ h1, h2, h3, h4, h5, h6{
 
 .header-decor-text{
     position: absolute;
-    bottom: 10px;
+    bottom: 22px;
     color: #0093A1;
     text-transform: uppercase;
 }
 
 .header-decor-text--one{
     z-index: 1;
+    right: 145px;
+    bottom: 120px;
+}
+
+.header-decor-text--one,
+.header-decor-text--two{
     font-family: 'Comfortaa';
     font-style: normal;
-    /*font-weight: 400;*/
     font-size: 130px;
     line-height: 145px;
     opacity: 0.3;
 }
 
 .header-decor-text--two{
-
+    z-index: 4;
+    left: 265px;
 }
 
 .header-decor-text--three{
